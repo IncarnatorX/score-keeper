@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link rel="icon" href="ping-pong.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <style>
+      .winner {
+        color: green;
+      }
+      .loser {
+        color: red;
+      }
+      .section{
+        padding:1rem;
+      }
+    </style>
+
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+            <figure class="image">
+              <img src="photo.avif" alt="">
+            </figure>
+          <header class="card-header">
+            <p class="card-header-title">Ping Pong Score keeper</p>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <h1>
+                <span id="p1ScoreDisplay">0</span> to <span id="p2ScoreDisplay">0</span>
+              </h1>
+              <label for="selectNumbers">Choose an option</label>
+              <div class="select is-rounded is-small">
+              <select name="" id="selectNumbers">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine</option>
+                <option value="10">Ten</option>
+              </select>
+            </div>   
+          </div>
+   
+          <footer class="card-footer">
+            <button id="p1Button" class="button is-primary card-footer-item">Player One</button>
+            <button id="p2Button" class="button is-info card-footer-item">Player Two</button>
+            <button id="resetButton" class="button is-danger card-footer-item">Reset</button>
+          </footer>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    
+  
+
+    <script src="app.js"></script>
+  </body>
+</html>
